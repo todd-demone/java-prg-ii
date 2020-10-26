@@ -21,3 +21,8 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/part10-Part10_04.Divisible/target/
+/part10-Part10_05.PrintingUserInput/target/
+/part10-Part10_06.LimitedNumbers/target/
+/part10-Part10_07.UniqueLastNames/target/
+/part10-Part10_08.Weighting/target/
