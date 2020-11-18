@@ -18,7 +18,7 @@ public class MagicSquare {
     // implement these three methods
     public ArrayList<Integer> sumsOfRows() {
         ArrayList<Integer> sumsRowsArray = new ArrayList<>();
-        
+
         for (int row = 0; row < square.length; row++) {
             int total = 0;
             for (int col = 0; col < square[row].length; col++) {
@@ -42,18 +42,18 @@ public class MagicSquare {
     }
 
     public ArrayList<Integer> sumsOfDiagonals() {
-        
+
         ArrayList<Integer> sumsDiagArray = new ArrayList<>();
-        
+
         // sum of diagonal starting at top left
         int totalOne = 0;
         for (int i = 0; i < square.length; i++) {
             totalOne += square[i][i];
         }
         sumsDiagArray.add(totalOne);
-        
+
         // sum of diagonal starting at top right
-        int row = 0; 
+        int row = 0;
         int col = square.length - 1;
         int totalTwo = 0;
         while (row < square.length) {
