@@ -15,7 +15,7 @@ public class MagicSquareFactory {
         square.placeValue(x, y, value);
 
         // while (array !populated)
-        while (square.giveAllNumbers().contains(0)) {
+        for (int i = 1; i < square.getHeight() * square.getWidth(); i++) {
             value += 1;
 
             // save original x and y values - just in case the 
@@ -45,10 +45,11 @@ public class MagicSquareFactory {
             if (square.readValue(x, y) != 0) {
                 // place square one level below the number you placed in the 
                 // previous iteration of the loop
-                square.placeValue(oldx, (oldy + 1), value);
-            } else {
-                square.placeValue(x, y, value);
-            }
+                x = oldx;
+                y = oldy + 1;    
+            } 
+            square.placeValue(x, y, value);
+            
         }
         return square;
     }
